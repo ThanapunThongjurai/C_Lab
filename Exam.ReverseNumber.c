@@ -3,20 +3,17 @@
 #include <string.h>
 #include <math.h>
 
-
 /*
-
 ใช้ itoa ฟังก์ชันจะง่ายมากๆกันเลยทีเดียว
 เราไม่เราไม่ชอบ เอาแบบยากๆนั้ละะ 555
 C – strrev() function
 */
 
-
-int functionNotReverse(char Receive[])
+unsigned int functionNotReverse(char Receive[])
 {
 
   //แปลงเลขอย่างเดียวไม่กลับค่า
-  int result = 0;
+  unsigned int result = 0;
   int len = strlen(Receive);
   for(int i=0; i<len; i++){
     result = result * 10 + ( Receive[i] - '0' );
@@ -25,9 +22,9 @@ int functionNotReverse(char Receive[])
   return result;
 }
 //ได้ตัวกลับค่ามาแล้วววววววววววววววว
-int functionReverse(char Receive[])
+unsigned int functionReverse(char Receive[])
 {
-  int result = 0;
+  unsigned int result = 0;
   int len = strlen(Receive);
   char Reversestring[len];
 
@@ -55,23 +52,23 @@ void main(){
     scanf("%s", Receive);
 
     //อัลกอ
-    int Reverse =     functionReverse(Receive);
-    int NotReverse =  functionNotReverse(Receive);
+    unsigned int Reverse =     functionReverse(Receive);
+    unsigned int NotReverse =  functionNotReverse(Receive);
     int count =       0;
-    int result =      functionNotReverse(Receive);
+    unsigned int result =      functionNotReverse(Receive);
     int palindrome = 1;
     //ลูปนรก
 
     //unsigned long
 
-    for(int i = 0; i < 100000; i++)
+    for(int i = 0; i < 1000; i++)
     {
       if(result != Reverse){
         //printf("result %d\n", result);
         //printf("Reverse %d\n", Reverse);
         result = result+Reverse;
 
-        int num = result;
+        unsigned int num = result;
         char snum[10];
         // convert 123 to string [buf]
         itoa(num, snum, 10);
