@@ -2,6 +2,8 @@
 #include <conio.h>
 #include <string.h>
 #include <math.h>
+#include <stdlib.h>
+
 void BOOM(int m,int n){
     //int m = 0;
     //int n = 0;
@@ -38,23 +40,23 @@ void BOOM(int m,int n){
             if(j - 1 != -1)
               field[i-1][j-1]++;
             field[i-1][j]++;
-            if(j +1 != m)
+            if(j +1 != n)
               field[i-1][j+1]++;
           }
 
           //mid
-          if(j - 1 != -1)
+          if(j - 1 > -1)
             field[i][j-1]++;
-          if(j +1 != m)
+          if(j +1 < n)
             field[i][j+1]++;
 
           //bottom
-          if(i +1 != m)
+          if(i +1 < m)
           {
-            if(j - 1 != -1)
+            if(j - 1 > -1)
               field[i+1][j-1]++;
             field[i+1][j]++;
-            if(j + 1 != m)
+            if(j + 1 < n)
               field[i+1][j+1]++;
           }
         }
@@ -117,12 +119,13 @@ void BOOM(int m,int n){
 }
 
 void main(){
+  printf("Minesweeper PROGRAM CHALLANGE\n");
   int m = 0;
   int n = 0;
   int loop = 1;
   while(loop == 1)
   {
-    printf("Minesweeper PROGRAM CHALLANGE\n");
+
     printf("EXAMPLE : 4 4 \n");
     printf("ENTER NUMBER LENGTH :");
     scanf("%d",&m);
