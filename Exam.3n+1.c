@@ -46,13 +46,13 @@ void main(){
   printf("EXAMPLE :10 20\n");
     int start = 1;
     int end   = 1;
-    while(start != 0 && end != 0)
+    while(start > 0 && start <1000000  && end > 0 && end <1000000)
     {
       printf("ENTER NUMBER START AND END :");
 
       scanf("%d",&start);
       scanf("%d",&end);
-      if(start != 0 && end != 0)
+      if(start > 0 && start <1000000  && end > 0 && end <1000000)
         Collatz(start,end);
     }
     printf("\n\n***************************END PROGRAM***************************\n\n");

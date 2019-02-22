@@ -1,4 +1,4 @@
-// by Thanapun Thongjurai @ECP1N Rmuit kkc
+// @ Thanapun Thongjurai @ECP1N Rmuit kkc
 #include <stdio.h>
 #include <conio.h>
 #include <string.h>
@@ -102,7 +102,7 @@ void main(){
     printf("ENTER NUMBER :");
     scanf("%s",Num1);
     scanf("%s",Num2);
-    if(strlen(Num1) < 10 && strlen(Num2) < 10 && Num1[0] != '0' && Num2[0] != '0')
+    if((strlen(Num1) < 10 && strlen(Num2) < 10) && (Num1[0] != '0' || Num2[0] != '0'))
         PrimaryArithmetic(Num1,Num2);
     else
       loop = 0;

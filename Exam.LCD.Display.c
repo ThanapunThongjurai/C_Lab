@@ -1,4 +1,8 @@
-// by Thanapun Thongjurai @ECP1N Rmuit kkc
+// LCD display Homework code
+// 98.99% convert code
+// @author original java code by Aj prasan @ECP Rmuit kkc
+// convert code to c by Thanapun Thongjurai @ECP1N Rmuit kkc
+// test and arrange c code by Nonthwat zaza @ECP1N Rmuit kkc
 #include <stdio.h>
 #include <conio.h>
 #include <string.h>
@@ -66,10 +70,9 @@ void LCDPRINTF(int length ,char Number[]){
 
 void main(){
   printf("LCD.DISPLAY PROGRAM CHALLANGE\n");
-  int length = 0;
+  int length = 1;
   char Number[10];
-  int loop = 1;
-  while(loop == 1)
+  while(length > 0)
   {
 
     printf("EXAMPLE :5 123456789\n");
@@ -78,8 +81,6 @@ void main(){
     scanf("%s",Number);
     if(length > 0 && Number[0] != ' ')
         LCDPRINTF(length,Number);
-    else
-      loop = 0;
   }
   printf("\n\n***************************END PROGRAM***************************\n\n");
 }

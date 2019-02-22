@@ -1,4 +1,5 @@
-// by Thanapun Thongjurai @ECP1N Rmuit kkc
+// @ Thanapun Thongjurai @ECP1N Rmuit kkc
+// work together with Nonthwat
 #include <stdio.h>
 #include <conio.h>
 #include <string.h>
