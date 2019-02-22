@@ -1,0 +1,14 @@
+F:\thanapun.th\github\Exam.PrimaryArithmetic.c: In function 'PrimaryArithmetic':
+F:\thanapun.th\github\Exam.PrimaryArithmetic.c:71:5: warning: implicit declaration of function 'fot'; did you mean 'fcvt'? [-Wimplicit-function-declaration]
+     fot(int i = 0; i < strlen(Num1);i++ )
+     ^~~
+     fcvt
+F:\thanapun.th\github\Exam.PrimaryArithmetic.c:71:9: error: expected expression before 'int'
+     fot(int i = 0; i < strlen(Num1);i++ )
+         ^~~
+F:\thanapun.th\github\Exam.PrimaryArithmetic.c:71:42: error: expected ';' before 'TempCarry'
+     fot(int i = 0; i < strlen(Num1);i++ )
+                                          ^
+                                          ;
+       TempCarry[i] =0;
+       ~~~~~~~~~                           
