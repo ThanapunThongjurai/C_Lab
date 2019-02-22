@@ -68,11 +68,12 @@ void PrimaryArithmetic(char Num1[],char Num2[]){
     int TempPlus = 0;
     int TempCarry[strlen(Num1)];
 
+    fot(int i = 0; i < strlen(Num1);i++ )
+      TempCarry[i] =0;
+
     //printf("%d\n",TempCarry[strlen(Num1)-1]);
     for(int i = strlen(Num1)-1 ; i >= 0; i -- )
     {
-      if(TempCarry[i] != 1)
-        TempCarry[i] =0;
       TempPlus = Inum1[i]+Inum2[i]+TempCarry[i];
       if(TempPlus >= 10)
       {
