@@ -1,8 +1,9 @@
+// by Thanapun Thongjurai @ECP1N Rmuit kkc
 #include <stdio.h>
 #include <conio.h>
 #include <string.h>
 #include <math.h>
-#include <string.h>
+#include <stdlib.h>
 
 void Collatz(int start ,int end){
   int tempstart = start;
@@ -31,7 +32,7 @@ void Collatz(int start ,int end){
         printf("%d ", temp3n);
       }
     }
-    printf("     count is %d",count);
+    printf("\n%d count is %d",i,count);
     if(max <= count)
     max = count;
     NumberMax=i;
@@ -42,12 +43,11 @@ void Collatz(int start ,int end){
 
 void main(){
   printf("3n+1 PROGRAM CHALLANGE\n");
+  printf("EXAMPLE :10 20\n");
     int start = 1;
     int end   = 1;
     while(start != 0 && end != 0)
     {
-
-      printf("EXAMPLE :10 20");
       printf("ENTER NUMBER START AND END :");
 
       scanf("%d",&start);
