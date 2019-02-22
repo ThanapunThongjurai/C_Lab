@@ -68,7 +68,7 @@ void PrimaryArithmetic(char Num1[],char Num2[]){
     int TempPlus = 0;
     int TempCarry[strlen(Num1)];
 
-    fot(int i = 0; i < strlen(Num1);i++ )
+    for(int i = 0; i < strlen(Num1);i++ )
       TempCarry[i] =0;
 
     //printf("%d\n",TempCarry[strlen(Num1)-1]);
