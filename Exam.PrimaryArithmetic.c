@@ -1,7 +1,10 @@
+// by Thanapun Thongjurai @ECP1N Rmuit kkc
 #include <stdio.h>
 #include <conio.h>
 #include <string.h>
 #include <math.h>
+#include <stdlib.h>
+
 void PrimaryArithmetic(char Num1[],char Num2[]){
 
     int limitOfNumber = 20;
@@ -88,6 +91,7 @@ void PrimaryArithmetic(char Num1[],char Num2[]){
 
 void main(){
   printf("PrimaryArithmetic PROGRAM CHALLANGE\n");
+  printf("EXAMPLE :999 999\n");
   int limitOfNumber = 20;
   char Num1[limitOfNumber];
   char Num2[limitOfNumber];
@@ -95,8 +99,6 @@ void main(){
   int loop = 1;
   while(loop == 1)
   {
-
-    printf("EXAMPLE :999 999\n");
     printf("ENTER NUMBER :");
     scanf("%s",Num1);
     scanf("%s",Num2);

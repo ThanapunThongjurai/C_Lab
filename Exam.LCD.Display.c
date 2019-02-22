@@ -1,7 +1,9 @@
+// by Thanapun Thongjurai @ECP1N Rmuit kkc
 #include <stdio.h>
 #include <conio.h>
 #include <string.h>
 #include <math.h>
+#include <stdlib.h>
 
 void LCDPRINTF(int length ,char Number[]){
                       //0   1   2   3   4   5   6   7   8

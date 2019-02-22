@@ -1,3 +1,4 @@
+// by Thanapun Thongjurai @ECP1N Rmuit kkc
 #include <stdio.h>
 #include <conio.h>
 #include <string.h>

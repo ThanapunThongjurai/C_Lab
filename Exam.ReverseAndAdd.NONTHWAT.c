@@ -1,12 +1,11 @@
-#include <stdio.h>
-#include <stdlib.h>
-
 // by Nonthwat zaza @ECP1N Rmuit kkc
 // ReverseAndAddQ Homework code
-// 95% code
-unsigned long long int SwN=0,Starter=0,Finalnum=0,Num=0,Aws=0,taws=0,SwNtest=0,fixaws=0,semifixaws=0,Finalnumtest=0,SwNII=0,semitaws=0;
-unsigned long long int Round=0;
-unsigned long long int reverse(long long N)
+// 98.99% code finalver
+#include <stdio.h>
+#include <stdlib.h>
+long long int SwN=0,Starter=0,Finalnum=0,Num=0,Aws=0,taws=0,SwNtest=0,fixaws=0,semifixaws=0,Finalnumtest=0,SwNII=0,semitaws=0;
+long long int Round=0;
+long long int reverse(long long N)
 {
             while (N != 0)
             {
@@ -17,7 +16,7 @@ unsigned long long int reverse(long long N)
                 return SwN;
 }
 
-unsigned long long int reversetest (unsigned long long int N)
+long long int reversetest (long long int N)
 {
             while (N != 0)
             {
@@ -27,7 +26,7 @@ unsigned long long int reversetest (unsigned long long int N)
             }
                 return SwNtest;
 }
-unsigned long long int reverseII(unsigned long long int N)
+long long int reverseII(long long int N)
 {
     unsigned long long int SwNII=0;
             while (N != 0)
@@ -39,21 +38,21 @@ unsigned long long int reverseII(unsigned long long int N)
                 return SwNII;
 }
 
-unsigned long long int Plus(unsigned long long int Num)
+long long int Plus(long long int Num)
 {
     (Finalnum = Starter+Num);
     Round++;
     return Finalnum;
 }
 
-unsigned long long int Plustest (unsigned long long int N)
+long long int Plustest (long long int N)
 {
     (Finalnumtest = taws+N);
     Round++;
     return Finalnumtest;
 }
 
-unsigned long long int main()
+long long int main()
 {
     long N;
     printf("input Number : ");
