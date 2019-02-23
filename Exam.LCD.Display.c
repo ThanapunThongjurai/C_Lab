@@ -80,7 +80,7 @@ void main(){
     scanf("%d",&length);
     scanf("%s",Number);
     if(length > 0 && Number[0] != ' ')
-        LCDPRINTF(length,Number);
+        LCDPRINTF(length, Number);
   }
   printf("\n\n***************************END PROGRAM***************************\n\n");
 }

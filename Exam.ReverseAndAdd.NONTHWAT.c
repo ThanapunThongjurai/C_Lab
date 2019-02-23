@@ -106,7 +106,7 @@ long long int main()
             //printf("taws is %d\n", taws);
             //printf("round is %d\n",Round);
             //printf("\n");
-            printf("%lli %lli",Round, Aws);
+            printf("%lli %lli", Round, Aws);
         }
 
 

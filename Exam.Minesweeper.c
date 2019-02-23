@@ -15,7 +15,7 @@ void BOOM(int m,int n){
     char mn[m][n];
     while(countM < m)
     {
-        char temp[n+1];
+        char temp[n];
         scanf("%s",temp);
         //printf("accep input");
         for(int i = 0 ; i < n ; i++)

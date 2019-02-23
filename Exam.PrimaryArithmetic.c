@@ -47,14 +47,12 @@ void PrimaryArithmetic(char Num1[],char Num2[]){
         Inum2[20];
     for(int i= 0; i <strlen(Num1) ; i ++)
     {
-      Inum1[i] = Num1[i];
-      Inum1[i] = Inum1[i] - 48;
+      Inum1[i] = Num1[i] - 48;
       //printf("%d",Inum1[i]);
     }
     for(int i= 0; i <strlen(Num2) ; i ++)
     {
-      Inum2[i] = Num2[i];
-      Inum2[i] = Inum2[i] - 48;
+      Inum2[i] = Num2[i] - 48;
       //printf("%d",Inum2[i]);
     }
 
@@ -85,9 +83,9 @@ void PrimaryArithmetic(char Num1[],char Num2[]){
     }
       //printf(" TempCarry[i]  %d\n",strlen(TempCarry));
     if(CountCarry != 0)
-      printf(" %d  carry operations\n",CountCarry);
+      printf(" %d  carry operations\n\n",CountCarry);
     else
-      printf("No carry operation\n");
+      printf(" No carry operation\n\n");
 }
 
 void main(){

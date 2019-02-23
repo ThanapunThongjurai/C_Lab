@@ -67,7 +67,7 @@ void main(){
     //printf("%u\n",functionreverse(Receive));
     //printf("%d\n",strlen(Receive));
     if(Receive != '0')
-      ReverseAndAdd(Receive);
+      ReverseAndAdd( Receive);
     //printf("%lli",reverse(Receive));
     //printf("%lli",Receive);
 

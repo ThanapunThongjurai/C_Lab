@@ -53,7 +53,7 @@ void main(){
       scanf("%d",&start);
       scanf("%d",&end);
       if(start > 0 && start <1000000  && end > 0 && end <1000000)
-        Collatz(start,end);
+        Collatz(start, end);
     }
     printf("\n\n***************************END PROGRAM***************************\n\n");
 }
