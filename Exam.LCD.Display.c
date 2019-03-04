@@ -71,7 +71,7 @@ void LCDPRINTF(int length ,char Number[]){
 void main(){
   printf("LCD.DISPLAY PROGRAM CHALLANGE\n");
   int length = 1;
-  char Number[10];
+  char Number[100];
   while(length > 0)
   {
 
