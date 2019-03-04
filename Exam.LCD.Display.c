@@ -79,7 +79,7 @@ void main(){
     printf("ENTER NUMBER LENGTH AND NUMBER :");
     scanf("%d",&length);
     scanf("%s",Number);
-    if(length > 0 && Number[0] != ' ')
+    if(length > 0)
         LCDPRINTF(length, Number);
   }
   printf("\n\n***************************END PROGRAM***************************\n\n");

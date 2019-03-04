@@ -20,7 +20,7 @@ void Collatz(int start ,int end){
     printf("%d is %d ",i,i);
     //printf("%d\t this number have 3n+1 is %d ",temp3n,temp3n);
     //int exitloop
-    while (temp3n != 1) {
+    while (temp3n > 1) {
       if((fmod(temp3n,2))==0){
         temp3n = temp3n / 2;
         count++;
